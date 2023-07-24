@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NetDeltaCalculator": {
+      "commandName": "Project",
+      "commandLineArgs": "AAPL"
+    }
+  }
+}
