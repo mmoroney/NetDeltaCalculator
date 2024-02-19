@@ -30,7 +30,7 @@ namespace NetDeltaCalculator {
                 double delta = (option1.LastPrice - option2.LastPrice) / (option2.Strike - option1.Strike);
                 netDelta += delta * options[i].OpenInterest;
             }
-            return netDelta;
+            return netDelta * 100;
         }
     }
 }

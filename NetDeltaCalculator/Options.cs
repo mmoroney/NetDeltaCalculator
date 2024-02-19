@@ -55,7 +55,11 @@ namespace NetDeltaCalculator {
 
         private static int ParseOpenInterest(HtmlNode option) {
             HtmlNode openInterestNode = option.Descendants("td").Where(node => node.GetAttributeValue("class", "").StartsWith("data-col9")).First();
-            return int.Parse(openInterestNode.InnerText.Replace(",", ""));
+            string text = openInterestNode.InnerText;
+            if (text == "-") {
+                return 0;
+            }
+            return int.Parse(text.Replace(",", ""));
         }
 
     }
