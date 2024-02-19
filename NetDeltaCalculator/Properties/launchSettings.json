@@ -2,7 +2,7 @@
   "profiles": {
     "NetDeltaCalculator": {
       "commandName": "Project",
-      "commandLineArgs": "AAPL"
+      "commandLineArgs": "AAPL C:\\Users\\MikeM\\Documents\\NetDelta\\AAPL.txt"
     }
   }
 }
